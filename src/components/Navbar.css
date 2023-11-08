@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+nav {
+  background-color: #e87c61;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: var(--cornflower-blue);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to white on hover */
+nav li a:hover {
+  background-color: var(--soft-black);
+  color: var(--white);
+}
+
+/* Style for the brand/logo */
+.brand-logo {
+  float: left;
+  color: var(--burntsienna);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5em; /* Larger font size for the logo */
+  font-weight: bold; /* Make it bold */
+}
+nav li a:hover {
+    background-color: var(--soft-black);
+    color: var(--white);
+  }
+
+#eh a {
+    font-weight: bold; /* Make it bold */
+    color: #222; /* You can fill in your preferred color here */
+    font-size: 1.5em; /* Optional: Increase the font size if needed */
+    font-family: serif;
+}
+
+#eh a:hover {
+    text-decoration: underline; /* Example effect */
+    color: #6e97ff; /* Optional: Change the color on hover, fill in your preferred color */
+}
+
+.dark-mode-toggle {
+    float: right; /* Position it to the right */
+    margin-right: 10px; /* Add some margin to the right */
+    /* Add any other styling as needed */
+}
