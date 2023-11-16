@@ -1,39 +1,84 @@
 import React from 'react';
-import ProjectCard from '../components/ProjectCard';
 import Navbar from '../components/Navbar';
-import blur_isaac from '../assets/images/blur_isaac.jpg'
+import Footer from '../components/Footer'
+// import RandomPlant from '../components/RandomPlant';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import RandomPlant from '../components/RandomPlant';
+import './css/projects.css';
+
+import GolangQuiz from '../assets/images/GoQuiz.png'
+import PineSapBackend from '../assets/images/PineSapBackend.png'
+import Heros from '../assets/images/pineSapFrontend.png'
+
+
 interface Project {
   id: number;
   name: string;
   description: string;
   githubLink: string;
+  image: string; 
 }
+  const email = "your-email@example.com";
+  const githubUrl = "https://github.com/yourusername";
+  const linkedInUrl = "https://linkedin.com/in/yourusername";
+  const repositoryUrl = "https://github.com/yourusername/your-repository";
 
-const projects: Project[] = [
-  // Add your project details here
-  { id: 1, name: 'Project One', description: 'This is a great project.', githubLink: 'https://github.com/yourusername/project-one' },
-  { id: 2, name: 'PRoject Two', description: 'second fun project', githubLink:'to the link' }
-];
-
-const Projects: React.FC = () => {
-  return (
-    <div>
+  const projects: Project[] = [
+    { 
+      id: 1, 
+      name: 'Go Quiz', 
+      description: 'This is a basic quiz coded in Go', 
+      githubLink: 'https://github.com/ethanjharrington012/go_quiz.git',
+      image: GolangQuiz // Assign GolangQuiz image
+    },
+    { 
+      id: 2, 
+      name: 'Pine Sap Backend', 
+      description: 'Backend for a full stack project using Flask and Python', 
+      githubLink: 'https://github.com/ethanjharrington012/pine-sap-backend.git',
+      image: PineSapBackend // Assign PineSapBackend image
+    },
+    {
+      id: 3,
+      name: 'Heros Front End',
+      description: 'Full Stack Application using React and Typescript',
+      githubLink: 'https://github.com/ethanjharrington012/hero-react.git',
+      image: Heros
+    }
+    // Add more projects if needed
+  ];
+  const Projects: React.FC = () => {
+    return (
+      <div className="projects-container">
         <Navbar/>
         <h1>My Projects</h1>
-        <ProjectCard
-        title="My Project"
-        description="This is a description of my project."
-        image={blur_isaac}
-        link="http://link_to_the_project.com"/>
-        {projects.map(project => (
-            <div key={project.id}>
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
+        <div className="projects-grid">
+          {projects.map(project => (
+            <Card key={project.id} className="project-card">
+              <Card.Img variant="top" src={project.image} />
+              <Card.Body>
+                <Card.Title>{project.name}</Card.Title>
+                <Card.Text>{project.description}</Card.Text>
+                <Button variant="primary" href={project.githubLink} target="_blank">View on GitHub</Button>
+                {project.name === 'Heros Front End' && (
+                  <Button variant="secondary" href="https://heroinventory114.web.app/" target="_blank" className="mt-2">Live</Button> // Replace with actual live link
+                )}
+              </Card.Body>
+            </Card>
+          ))}
         </div>
-      ))}
-    </div>
-  );
-};
+        <RandomPlant/>
+        <h2>Why this API?</h2>
+        <p className="api-description">Well with my background in being an Arborist <br/>I thought it would be fun to combine my knowlesge with trees and plants with my love for coding.<br/> So useing the Plant Fact API I made the back end using Flask and Python. and Hosted it on Render.</p>
+        <Footer 
+        email="ethanjharrington012@gmail.com"
+        githubUrl="https://github.com/ethanjharrington012"
+        linkedInUrl="https://www.linkedin.com/in/ethan-harrington-000688267/"
+        repositoryUrl="https://github.com/ethanjharrington012/Portfolio-Backend"
+      />
+      </div>
+    );
+  };
 
 export default Projects;

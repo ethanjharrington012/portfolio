@@ -1,51 +1,54 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
-
+import Footer from '../components/Footer';
+import FetchDataComponent from '../components/FetchData';
+import TechnologiesSection from '../components/Technology';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/About.css'
+import myface from '../assets/images/myFace.png'
+import undraw from '../assets/images/undraw_in_sync_re_jlqd.svg'
 
 const About: React.FC = () => {
+
+  const email = "ethanjharrington012@gmail.com";
+  const githubUrl = "https://github.com/ethanjharrington012";
+  const linkedInUrl = "https://www.linkedin.com/in/ethan-harrington-000688267/";
+  const repositoryUrl = "gh repo clone ethanjharrington012/Portfolio-Backend";
+
   return (
-    <div>
-      <Navbar/>
-      <h1>About Me</h1>
-      <p>This is the about page where you can introduce yourself.</p>
-      {/* Add your details here */}
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Navbar />
+      <div className="titles-container">
+        <h2>Backend,</h2>
+        <h2>Frontend,</h2>
+        <h2>Leadership</h2>
+      </div>
+      <div className="profile-picture-container">
+        {/* Replace 'path_to_your_image.jpg' with the actual path to your image */}
+        <img src={ myface}  alt="Profile" className="profile-picture" />
+      </div>
+      {/* Placeholder for another image */}
+      <div className="undraw-container">
+        <img src={undraw} alt="Creative Team" />
+      </div>
+          <main className="container my-5">
+          <div className="about-container">
+            <h1>About Me</h1>
+            <p>
+              Hi, I'm Ethan Harrington, a dedicated tech enthusiast who pivoted to software development after a rich journey in data and coding. My training at Coding Temple honed my skills in Python, JavaScript, and React, leading me to craft dynamic web applications like 'Pine Sap'.
+            </p>
+            <p>
+              At Blue Spruce in Maine, I combined technical know-how with strategic project management, showcasing my adaptability and commitment to excellence. I'm passionate about solving complex problems and continuously evolving in the fast-paced world of technology.
+            </p>
+          </div>
+        </main>
+
+      <TechnologiesSection/>
+      <FetchDataComponent/>
+      <Footer email={email} githubUrl={githubUrl} linkedInUrl={linkedInUrl} repositoryUrl={repositoryUrl} />
     </div>
   );
 };
-
-
-
-export const PlantFact: React.FC = () => {
-  const [fact, setFact] = useState<string | null>(null);
-
-  const getPlantFact = async () => {
-    const apiKey = 'sk-tNg6654a89a4bda6b2865'; // This is not secure.
-    const endpoint = `https://some-plant-api.com/facts?apiKey=${apiKey}`;
-    
-    try {
-      const response = await fetch(endpoint);
-      const data = await response.json();
-
-      if (response.ok) {
-        setFact(data.fact);
-      } else {
-        throw new Error(data.message || 'Error fetching plant fact.');
-      }
-    } catch (error: any) {
-      console.error('Fetching plant fact failed:', error.message);
-      setFact('Could not load a plant fact at this time.');
-    }
-  };
-
-  return (
-    <div>
-      <button onClick={getPlantFact}>Get a Plant Fact</button>
-      {fact && <p>{fact}</p>}
-    </div>
-  );
-};
-
-
 
 
 export default About;

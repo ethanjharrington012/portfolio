@@ -1,0 +1,56 @@
+/* technology.css */
+.technology-container {
+    display: flex; /* Make the technology-container a flex container */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    padding-top: 45px;
+    border: 1px solid #111;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    position: relative;
+    height: 100%; /* Ensure the container takes full height */
+  }
+  
+  .technology-hovered {
+    background-color: rgba(90, 96, 234, 0.9);
+  }
+  
+  /* technology.css */
+  .graphic-container {
+    background-color: #6ebcb3; /* Light blue background */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .graphic-icon {
+    font-size: 30px; /* Increase the icon size */
+    color: rgb(6, 6, 6);
+  }
+  
+  .card-body-custom {
+    margin-top: 15px; /* Adjust as needed */
+    flex-grow: 1; /* Allow the body to grow and push the button down */
+  }
+  
+  .button-custom {
+    margin-top: auto; /* Push the button to the bottom */
+    margin-bottom: 15px;
+    background-color: #e87c61; /* Set the button background color */
+    border-color: #e87c61; /* Set the border color to match the background */
+  }
+  
+  .button-custom:hover,
+  .button-custom:focus,
+  .button-custom:active {
+    background-color: darken(#e87c61, 10%); /* Slightly darker color on hover, focus, and active states */
+    border-color: darken(#e87c61, 10%);
+  }

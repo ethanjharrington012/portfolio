@@ -1,0 +1,28 @@
+.projects-container {
+    text-align: center;
+
+    padding-bottom: 20px;
+  }
+  
+  .projects-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .project-card {
+    width: 18rem;
+    margin: 10px;
+    text-align: left;
+  }
+  
+  .api-description {
+    margin-top: 20px;
+    margin-bottom: 10%;
+  }
+  .project-card .btn {
+    margin-top: 10px; /* Adds space above each button */
+    margin-right: 5px; /* Adds space to the right of each button */
+    margin-left: 5px; /* Adds space to the left of each button */
+  }

@@ -1,0 +1,36 @@
+/* RandomPlant.css */
+.random-plant-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .fetch-plant-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Space below the button */
+  }
+  
+  .fetch-plant-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .plant-info {
+    background-color: #f2f2f2; /* Light grey background */
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  .plant-info h3 {
+    color: #333; /* Dark grey text for the title */
+  }
+  
+  .plant-info p {
+    color: #666; /* Light grey text for details */
+    margin: 5px 0; /* Spacing around paragraphs */
+  }
+  

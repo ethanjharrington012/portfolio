@@ -1,0 +1,34 @@
+/* genre.css */
+.genre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .genre-button {
+    padding: 10px 20px;
+    background-color: #5a60ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .genre-button:hover {
+    background-color: #3d47a9;
+  }
+  
+  .genre-data {
+    margin-top: 20px;
+    font-size: 1.25rem; /* Make the font size larger */
+  }
+  
+  .genre-error {
+    margin-top: 20px;
+    color: red;
+  }
+  
