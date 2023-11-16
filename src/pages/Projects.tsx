@@ -19,11 +19,7 @@ interface Project {
   githubLink: string;
   image: string; 
 }
-  const email = "your-email@example.com";
-  const githubUrl = "https://github.com/yourusername";
-  const linkedInUrl = "https://linkedin.com/in/yourusername";
-  const repositoryUrl = "https://github.com/yourusername/your-repository";
-
+ 
   const projects: Project[] = [
     { 
       id: 1, 
