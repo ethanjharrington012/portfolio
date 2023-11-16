@@ -16,6 +16,7 @@ root.render(
     <Router>
       <Routes>
         {/* Define your routes here */}
+        <Route path="/" element={<About />} />
         <Route path="/about" element={<About />} />
         <Route path='/projects' element={<Projects/>}/>
         {/* Add other routes as needed */}

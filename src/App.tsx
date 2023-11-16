@@ -2,6 +2,7 @@ import React, { useState, createContext, useContext } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
+import About from './pages/About';
 
 // Create a context for the dark mode state
 export const DarkModeContext = createContext({
