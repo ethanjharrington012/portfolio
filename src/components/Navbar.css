@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
+
+@keyframes bg-pan-left {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: -100% 0;
+  }
+}
+
+
 nav {
-  background-color: #e87c61;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
   font-family: 'Roboto', sans-serif;
+  animation: bg-pan-left 8s infinite both;
 }
 
 nav ul {
@@ -22,42 +35,80 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: transform 0.3s, color 0.3s; /* Adjust or remove if not needed */
 }
 
-/* Change the link color to white on hover */
 nav li a:hover {
-  background-color: var(--soft-black);
-  color: var(--white);
+  animation: flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
-/* Style for the brand/logo */
 .brand-logo {
   float: left;
   color: var(--burntsienna);
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.5em; /* Larger font size for the logo */
-  font-weight: bold; /* Make it bold */
+  font-size: 1.5em; 
+  font-weight: bold;
 }
-nav li a:hover {
-    background-color: var(--soft-black);
-    color: var(--white);
-  }
 
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+/* EH element styling */
 #eh a {
-    font-weight: bold; /* Make it bold */
-    color: #222; /* You can fill in your preferred color here */
-    font-size: 1.5em; /* Optional: Increase the font size if needed */
-    font-family: serif;
+  font-weight: bold;
+  color: #222;
+  font-size: 1.5em;
+  font-family: serif;
+  transition: transform 0.3s; /* Smooth transition for 3D effect */
+  cursor: pointer; /* Indicate it's clickable */
 }
 
 #eh a:hover {
-    text-decoration: underline; /* Example effect */
-    color: #6e97ff; /* Optional: Change the color on hover, fill in your preferred color */
+  animation: bounce-in-top 1.1s 1s both;
+}
+
+/* 3D effect when clicked */
+#eh a:active {
+  transform: scale(0.95) translateZ(15px); /* Slightly shrink and pop out */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add depth with shadow */
 }
 
 .dark-mode-toggle {
-    float: right; /* Position it to the right */
-    margin-right: 10px; /* Add some margin to the right */
-    /* Add any other styling as needed */
+  float: right;
+  margin-right: 10px;
 }

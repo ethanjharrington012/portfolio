@@ -23,6 +23,8 @@ const FetchDataComponent: React.FC = () => {
       setIsLoading(false);
     }
   };
+// TO DO:
+// Make this look better. It just shows up as very basic
 
   return (
     <div className="genre-container">

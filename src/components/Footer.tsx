@@ -6,10 +6,18 @@ interface FooterProps {
   linkedInUrl: string;
   repositoryUrl: string;
 }
+// TO DO:
+// instead of having the socials being a lonk. Make them into ICONs
 
 const Footer: React.FC<FooterProps> = ({ email, githubUrl, linkedInUrl, repositoryUrl }) => {
   return (
-    <footer style={{ backgroundColor: 'black', color: 'white', padding: '20px', textAlign: 'center' }}>
+    <footer style={{ 
+        background: 'linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%)',
+        backgroundBlendMode: 'multiply',
+        color: 'white', 
+        padding: '20px', 
+        textAlign: 'center' 
+    }}>
       <p>Contact me: <a href={`mailto:${email}`} style={{ color: 'white' }}>Email</a></p>
       <p>
         Follow me on: 

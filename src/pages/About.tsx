@@ -15,6 +15,10 @@ const About: React.FC = () => {
   const linkedInUrl = "https://www.linkedin.com/in/ethan-harrington-000688267/";
   const repositoryUrl = "gh repo clone ethanjharrington012/Portfolio-Backend";
 
+// TO DO:
+// Add a section for testimonials
+// Add a link to open my resume.
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
@@ -34,10 +38,10 @@ const About: React.FC = () => {
           <main className="container my-5">
           <div className="about-container">
             <h1>About Me</h1>
-            <p>
+            <p className='about-me'>
               Hi, I'm Ethan Harrington, a dedicated tech enthusiast who pivoted to software development after a rich journey in data and coding. My training at Coding Temple honed my skills in Python, JavaScript, and React, leading me to craft dynamic web applications like 'Pine Sap'.
             </p>
-            <p>
+            <p className='about-me'>
               At Blue Spruce in Maine, I combined technical know-how with strategic project management, showcasing my adaptability and commitment to excellence. I'm passionate about solving complex problems and continuously evolving in the fast-paced world of technology.
             </p>
           </div>
