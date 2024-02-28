@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/About.css'
 import myface from '../assets/images/myFace.png'
 import undraw from '../assets/images/undraw_in_sync_re_jlqd.svg'
-
+import headShot from '../assets/images/headshot.jpeg'
 const About: React.FC = () => {
 
   const email = "ethanjharrington012@gmail.com";
@@ -29,7 +29,7 @@ const About: React.FC = () => {
       </div>
       <div className="profile-picture-container">
         {/* Replace 'path_to_your_image.jpg' with the actual path to your image */}
-        <img src={ myface}  alt="Profile" className="profile-picture" />
+        <img src={ headShot }  alt="Profile" className="profile-picture" />
       </div>
       {/* Placeholder for another image */}
       <div className="undraw-container">
