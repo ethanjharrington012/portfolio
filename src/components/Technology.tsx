@@ -54,13 +54,13 @@ const TechnologiesSection: React.FC = () => {
       {
         title: "Frontend Developer",
         description: "Focus on creating engaging, user-friendly interfaces. Expertise in writing clean, maintainable code with HTML, CSS, Javascript, TypeScript, and React.",
-        graphic: faLaptopCode // Update to faLaptopCode
+        graphic: faLaptopCode 
       },
       {
         title: "Leadership",
         description: "Demonstrated initiative in leading projects, guiding design and implementation with detail-oriented approach. Proficient in project management and effective communication.",
-        graphic: faUser // Update to faUser
-      },
+        graphic: faUser
+      }, 
     ];
     return (
         <div className="container">

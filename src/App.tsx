@@ -2,7 +2,7 @@ import React, { useState, createContext, useContext } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import About from './pages/About';
+
 
 // Create a context for the dark mode state
 export const DarkModeContext = createContext({
@@ -28,7 +28,6 @@ function App() {
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
-          {/* Add a button to toggle dark mode */}
           <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
           <a
             className="App-link"
@@ -39,7 +38,6 @@ function App() {
             Learn React
           </a>
         </header>
-        {/* Rest of your components */}
       </div>
     </DarkModeContext.Provider>
   );
