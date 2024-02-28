@@ -13,7 +13,7 @@
   }
   
   .technology-hovered {
-    background-color: rgba(90, 96, 234, 0.9);
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
   }
   
   /* technology.css */
@@ -44,13 +44,13 @@
   .button-custom {
     margin-top: auto; /* Push the button to the bottom */
     margin-bottom: 15px;
-    background-color: #e87c61; /* Set the button background color */
-    border-color: #e87c61; /* Set the border color to match the background */
+    background-color: #f19cd3; /* Set the button background color */
+    border-color: #000000; /* Set the border color to match the background */
   }
   
   .button-custom:hover,
   .button-custom:focus,
   .button-custom:active {
-    background-color: darken(#e87c61, 10%); /* Slightly darker color on hover, focus, and active states */
-    border-color: darken(#e87c61, 10%);
+    background-color: darken(#cb32cb, 10%); /* Slightly darker color on hover, focus, and active states */
+    border-color: darken(#dba4db, 10%);
   }

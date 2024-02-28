@@ -66,9 +66,10 @@ interface Project {
         </div>
         <RandomPlant/>
         <h2>Why this API?</h2>
-        <p className="api-description">Well with my background in Tree Work<br/>I thought it would be fun to combine my knowledge with trees and plants with my love for coding.<br/> 
-        So useing the Plant Fact API I made the back end using Flask and Python. Hosted on Render.</p>
-        <Footer 
+        <p className="api-description">Well, with my background in Tree Work,<br/>I thought it would be fun to combine my knowledge of trees and plants with my love for coding.<br/> 
+        So, using the Plant Fact API, I made the backend using Flask and Python, hosted on Render.</p>
+        <Footer
+
         email="ethanjharrington012@gmail.com"
         githubUrl="https://github.com/ethanjharrington012"
         linkedInUrl="https://www.linkedin.com/in/ethan-harrington-000688267/"
