@@ -4,10 +4,9 @@ import Footer from '../components/Footer';
 import FetchDataComponent from '../components/FetchData';
 import TechnologiesSection from '../components/Technology';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/About.css'
-import myface from '../assets/images/myFace.png'
-import undraw from '../assets/images/undraw_in_sync_re_jlqd.svg'
-import headShot from '../assets/images/headshot.jpeg'
+import './css/About.css';
+import undraw from '../assets/images/undraw_in_sync_re_jlqd.svg';
+import headShot from '../assets/images/headshot.jpeg';
 const About: React.FC = () => {
 
   const email = "ethanjharrington012@gmail.com";

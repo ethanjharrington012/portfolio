@@ -5,33 +5,33 @@
 .about-container {
     font-family: Georgia;
     color: #000000;
-    text-align: center; /* Center text */
-    padding-top: 20px; /* Padding above the section */
-    padding-bottom: 20px; /* Padding below the section */
+    text-align: center; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
   }
   .about-container h1 {
-    /* font-size: 1rem; */
+ 
     margin-bottom: 1rem;
   }
   .about-container p {
-    /* font-size: 1rem; */
+
     line-height: 1.5;
     margin-bottom: 1rem;
   }
   .titles-container {
-    display: flex; /* Use Flexbox */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     margin-top: 20px;
-    gap: 20px; /* Adds space between the items */
+    gap: 20px; 
   }
   .about-container h1 {
-    font-size: 2rem; /* Adjust the size of the heading */
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
   
   .about-container p {
-    font-size: 1rem; /* Adjust the size of the paragraph text */
+    font-size: 1rem; 
     line-height: 1.5; /* Spacing between lines */
     margin-bottom: 1rem;
   }

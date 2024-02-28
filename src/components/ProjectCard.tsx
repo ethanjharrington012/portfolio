@@ -3,8 +3,8 @@ import React from 'react';
 interface ProjectCardProps {
   title: string;
   description: string;
-  image: string; // URL to the project image
-  link: string; // URL to the project
+  image: string; 
+  link: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, link }) => {

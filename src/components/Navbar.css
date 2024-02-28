@@ -35,7 +35,7 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: transform 0.3s, color 0.3s; /* Adjust or remove if not needed */
+  transition: transform 0.3s, color 0.3s;
 }
 
 nav li a:hover {
@@ -88,24 +88,23 @@ nav li a:hover {
   }
 }
 
-/* EH element styling */
+
 #eh a {
   font-weight: bold;
   color: #222;
   font-size: 1.5em;
   font-family: serif;
-  transition: transform 0.3s; /* Smooth transition for 3D effect */
-  cursor: pointer; /* Indicate it's clickable */
+  transition: transform 0.3s; 
+  cursor: pointer; 
 }
 
 #eh a:hover {
   animation: bounce-in-top 1.1s 1s both;
 }
 
-/* 3D effect when clicked */
 #eh a:active {
-  transform: scale(0.95) translateZ(15px); /* Slightly shrink and pop out */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add depth with shadow */
+  transform: scale(0.95) translateZ(15px); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
 }
 
 .dark-mode-toggle {
